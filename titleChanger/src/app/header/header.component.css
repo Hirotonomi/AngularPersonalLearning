@@ -1,0 +1,14 @@
+.head{
+    background: linear-gradient(90deg, rgba(75,133,153,0.8799894957983193) 0%, rgba(55,170,199,1) 54%, rgba(19,178,212,1) 100%);
+    display: flex;
+    align-items: center;
+}
+.head > img{
+    width: 18vw;
+    border-radius: 100%;
+    border: 3px solid rgb(26, 26, 26);
+}
+.head>h1{
+    margin-left: 6vw;
+    
+}
