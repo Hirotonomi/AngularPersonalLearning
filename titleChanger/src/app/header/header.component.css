@@ -1,14 +1,80 @@
 .head{
-    background: linear-gradient(90deg, rgba(75,133,153,0.8799894957983193) 0%, rgba(55,170,199,1) 54%, rgba(19,178,212,1) 100%);
+    background: linear-gradient(90deg, #06D6A0 0%, #1B9AAA 100%);
     display: flex;
     align-items: center;
+    padding-top: 3vh;
 }
 .head > img{
-    width: 18vw;
-    border-radius: 100%;
-    border: 3px solid rgb(26, 26, 26);
+    width: 10vw;
+    border-radius: 30%;
+    box-shadow: -3vh 3vh 0 #0BC19C;
+    margin: 0 6vh 4vh;
 }
 .head>h1{
-    margin-left: 6vw;
+    margin-left: 4vw;
+    text-wrap: nowrap;
+    
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 7vh;
+  font-style: normal;
     
 }
+
+.eng-pol{
+    align-self: normal;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding-right: 3vh;
+}
+
+
+/* toggle i don how it realy works i just edited so it places flags */
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+    background-image: url("https://flagcdn.com/w2560/gb.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+	width: 100px;
+	height: 50px;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/69/Zastava_Kranja.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+label:active:after {
+	width: 65px;
+}
+
+
+
