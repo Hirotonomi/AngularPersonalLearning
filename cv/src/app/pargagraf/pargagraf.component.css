@@ -1,0 +1,34 @@
+.parDiv{
+    display: flex;
+    margin: 2vh 0;
+    padding: 1vh 3vw;
+
+}
+
+.texts{
+    width: 100%;
+}
+
+.imgL{
+    width: 25vw;
+    border-radius: 5%;
+    box-shadow: -3vh 3vh 0 #7EDDAC;
+    margin: 0 1vw;
+    transition: 0.8s;
+}
+.imgL:hover{
+    transform: scale(1.1);
+    margin: 1vw 2vw
+}
+
+.imgR{
+    width: 25vw;
+    border-radius: 5%;
+    box-shadow: 3vh 3vh 0 #7EDDAC;
+    margin: 0 0 0 1vw;
+    transition: 0.8s;
+}
+.imgR:hover{
+    transform: scale(1.1);
+    margin: 1vw 2vw
+}
