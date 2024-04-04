@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -16,12 +16,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  toggleCheckbox(event: Event) {
-    const target = event.target as HTMLInputElement;
-    if (target.checked) {
-      console.log('english');
-    }
-    else (console.log("polish"))
-  }
+  @Output() toggleChecked = new EventEmitter<boolean>();
+
+  toggleCheckbox(event: Event): void {
+    var toggle = event.target as HTMLInputElement;
+    var isChecked = toggle.checked
+    this.toggleChecked.emit(isChecked);
+  } 
 
 }

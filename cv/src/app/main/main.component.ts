@@ -8,7 +8,7 @@ import { PargagrafComponent } from '../pargagraf/pargagraf.component';
   standalone: true,
   imports: [HeaderComponent,PargagrafComponent],
   template: `
-  <app-header></app-header>
+  <app-header (toggleChecked)="updateFromToggle($event)"></app-header>
 
   <app-pargagraf [header]="myArray[0].header" [text]="myArray[0].text" [visbility1]="myArray[0].visbility1" [visbility2]="myArray[0].visbility2" ></app-pargagraf>
   
@@ -24,5 +24,15 @@ import { PargagrafComponent } from '../pargagraf/pargagraf.component';
 })
 export class MainComponent {
   constructor(private pService: ParagrafTextService){}
-  myArray = this.pService.PolishArray
+  myArray = this.pService.getPolishContent()
+  updateFromToggle(isChecked: boolean){
+    if (isChecked){
+      this.myArray = this.pService.getEnglishContent()
+    }
+    else{
+      this.myArray = this.pService.getPolishContent()
+    }
+
+  }
+  
 }
