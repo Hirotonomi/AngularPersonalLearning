@@ -10,13 +10,12 @@ import { PargagrafComponent } from '../pargagraf/pargagraf.component';
   template: `
   <app-header (toggleChecked)="updateFromToggle($event)"></app-header>
 
-  <app-pargagraf [header]="myArray[0].header" [text]="myArray[0].text" [visbility1]="myArray[0].visbility1" [visbility2]="myArray[0].visbility2" ></app-pargagraf>
+  <app-pargagraf [header]="myArray[0].header" [text]="myArray[0].text" [visbility1]="myArray[0].visbility1" [visbility2]="myArray[0].visbility2" [src]="myArray[0].src"></app-pargagraf>
   
-  <app-pargagraf [header]="myArray[1].header" [text]="myArray[1].text" [visbility1]="myArray[1].visbility1" [visbility2]="myArray[1].visbility2"></app-pargagraf>
+  <app-pargagraf [header]="myArray[1].header" [text]="myArray[1].text" [visbility1]="myArray[1].visbility1" [visbility2]="myArray[1].visbility2" [src]="myArray[1].src"></app-pargagraf>
 
-<app-pargagraf [header]="myArray[2].header" [text]="myArray[2].text" [visbility1]="myArray[2].visbility1" [visbility2]="myArray[2].visbility2"></app-pargagraf>
+<app-pargagraf [header]="myArray[2].header" [text]="myArray[2].text" [visbility1]="myArray[2].visbility1" [visbility2]="myArray[2].visbility2"[src]="myArray[2].src"></app-pargagraf>
 
-<app-pargagraf [header]="myArray[3].header" [text]="myArray[3].text" [visbility1]="myArray[3].visbility1" [visbility2]="myArray[3].visbility2"></app-pargagraf>
 
   `,
   styleUrl: './main.component.css',

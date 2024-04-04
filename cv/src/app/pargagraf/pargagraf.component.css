@@ -11,6 +11,7 @@
 
 .imgL{
     width: 25vw;
+    height: 17.461vw;
     border-radius: 5%;
     box-shadow: -3vh 3vh 0 #7EDDAC;
     margin: 0 1vw;
@@ -23,6 +24,7 @@
 
 .imgR{
     width: 25vw;
+    height: 17.461vw;
     border-radius: 5%;
     box-shadow: 3vh 3vh 0 #7EDDAC;
     margin: 0 0 0 1vw;
