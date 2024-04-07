@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+// interfaces
 interface paragraph {
   header: string;
   text: string;
@@ -21,7 +22,11 @@ interface formContent{
   providedIn: 'root'
 })
 
-export class SService {
+
+// class
+export default class SService {
+
+// sources
 PolishArray: paragraph[] = [
     {
       header: "Doświadczenie",
@@ -96,6 +101,7 @@ formContentEN: formContent={
   submitV: "SEND"
 } 
 
+// getters
   getPolishParagraphContent()  {
     return this.PolishArray
 

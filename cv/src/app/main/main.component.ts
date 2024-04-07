@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
-import { SService } from '../service.service';
+import SService from '../service.service';
 import { PargagrafComponent } from '../pargagraf/pargagraf.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
 
