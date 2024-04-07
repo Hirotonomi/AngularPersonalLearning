@@ -1,0 +1,14 @@
+<form class="container" onsubmit="reset(); return false;">
+    <label>{{fName}}</label><br>
+    <input type="text" id="fname" placeholder="{{fNameText}}"><br>
+    
+    <label>{{lName}}</label><br>
+    <input type="text" id="lname" placeholder="{{lNameText}}"><br>
+    
+    <label>{{topic}}</label><br>
+    <textarea id="text" placeholder="{{topicText}}" style="height:200px"></textarea><br>
+
+    <input type="submit" class="button-48" (click)="sendEmail()" value="{{submitV}}">
+
+</form>
+    

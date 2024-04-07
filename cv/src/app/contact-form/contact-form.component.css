@@ -1,0 +1,22 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #B2E1c9;
+    padding: 0.5vh 3vw ;
+    border-radius: 25px ;
+}
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.button-48{
+    width: 60vw;
+    align-self: center  ;
+    margin-bottom: 1vh;
+}

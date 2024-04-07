@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ParagrafTextService } from './paragraf-text.service';
+import { SService } from './service.service';
 
-describe('ParagrafTextService', () => {
-  let service: ParagrafTextService;
+describe('SService', () => {
+  let service: SService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ParagrafTextService);
+    service = TestBed.inject(SService);
   });
 
   it('should be created', () => {

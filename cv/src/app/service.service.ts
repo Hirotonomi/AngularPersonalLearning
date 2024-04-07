@@ -6,14 +6,22 @@ interface paragraph {
   src: string;
   visbility1: string;
   visbility2: string;
-  
+}
+interface formContent{
+  fname: string;
+  fNameText: string;
+  lName: string;
+  lNameText: string;
+  topic: string;
+  topicText: string;
+  submitV: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class ParagrafTextService {
+export class SService {
 PolishArray: paragraph[] = [
     {
       header: "Doświadczenie",
@@ -66,16 +74,46 @@ EnglishArray: paragraph[] = [
       visbility1: "",
       visbility2: "display:none"
   }
+  
 ];
 
-  getPolishContent()  {
+formContentPL: formContent={
+  fname: "Imie",
+  fNameText: "Wpisz imie...",
+  lName:  "Nazwisko",
+  lNameText: "Wpisz nazwisko...",
+  topic: "Treść",
+  topicText: "  Wiadomość + informacje kontaktowe...",
+  submitV: "WYŚLIJ"
+} 
+formContentEN: formContent={
+  fname: "First Name",
+  fNameText: "Input first name...",
+  lName:  "Second Name",
+  lNameText: "Input second name...",
+  topic: "Content",
+  topicText:" Message + contact info...",
+  submitV: "SEND"
+} 
+
+  getPolishParagraphContent()  {
     return this.PolishArray
 
   }
 
-  getEnglishContent()  {
+  getEnglishParagraphContent()  {
     return this.EnglishArray
-
   }
+
+  getPolishFormContent(){
+    return this.formContentPL
+  }
+
+  getEnglishFormContent(){
+    return this.formContentEN
+  }
+
+  
+
 
 }
